@@ -6,15 +6,45 @@ body {
    @include flex;
 }
 
-.home-wrap {
-  // height: 100vh;
+section {
+  height: 100vh;
   width: 100vw;
-  border: $border-dev-red;
+  font-family: 'Orbitron', sans-serif;
+  background: url('../images/clock.png') center center no-repeat;
+  background-size: cover;
+  color: rgba(255, 0, 0, 1);
 }
 
-.recipe {
-  border-bottom: 2px solid black;
-  margin-bottom: 20px;
+.clockFace {
+  @include flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  p {
+    margin: 10px 0;
+    font-size: 2em;
+    text-shadow : 2px 2px 0.5em rgba(255, 0, 0, .5);
+
+    @media only screen and (max-height: 500px){
+      font-size: 1.5em;
+    }
+
+    @media only screen and (max-height: 370px) and (max-width: 760px){
+      font-size: 1em;
+    }
+
+    @media only screen and (max-height: 370px) and (max-width: 650px){
+      font-size: .8em;
+    }
+
+    @media only screen and (max-height: 370px) and (max-width: 590px){
+      font-size: .7em;
+    }
+
+  }
+
+  p:first-of-type {
+    margin-top: -3%;
+  }
 }
-// STYLES GO HERE //
-@import "js";

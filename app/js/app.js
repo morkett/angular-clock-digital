@@ -17,6 +17,6 @@ MainRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 
 angular
-  .module('myApp', ['ui.router','firebase'])
+  .module('myApp', ['ui.router'])
   .constant('API_URL', 'http://localhost:3000')
   .config(MainRouter);
