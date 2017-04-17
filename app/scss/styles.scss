@@ -6,6 +6,7 @@
 body {
    @include flex;
    background-color: black;
+   overflow: hidden;
 }
 
 section {
@@ -61,16 +62,28 @@ section {
 .analogue {
   height: 100vh;
   width: 100vw;
-  background: url('../images/analogue-min.png') center center no-repeat;
+  // background: url('../images/analogue-min.png') center center no-repeat;
   background-size: cover;
   overflow: hidden;
+
+img {
+  width: 1440px;
+  height: 798px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 
 }
 .widget-clock .square {
+  // position: absolute;
   width: 420px;
-  height: 100px;
-  transform: rotate(-90deg) translateX(290px) translateY(440px);
+  height: 420px;
+  transform: rotate(-90deg);
+  top: 200px;
+  left: 440px;
+  padding: 0;
 }
 
 .widget-clock .digital {
