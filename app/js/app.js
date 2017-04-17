@@ -1,13 +1,17 @@
 function MainRouter ($stateProvider, $urlRouterProvider) {
 
   $stateProvider
-    .state('home', {
-      url: '/',
+    .state('digital', {
+      url: '/digital',
       templateUrl: '../states/home.html'
+    })
+    .state('analogue', {
+      url: '/analogue',
+      templateUrl: '../states/analogue.html'
     });
 
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/digital');
 
 }
 
