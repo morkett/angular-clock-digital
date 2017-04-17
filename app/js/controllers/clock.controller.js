@@ -1,7 +1,7 @@
 function ClockController($timeout){
   var controller = this;
 
-  controller.clock = 'loading clock...';
+  controller.clock = '...';
   controller.tickInterval = 1000;
 
   var tick = function() {
