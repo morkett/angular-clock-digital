@@ -2,8 +2,10 @@
 @import "config";
 @import "mixins";
 
+
 body {
    @include flex;
+   background-color: black;
 }
 
 section {
@@ -68,5 +70,30 @@ section {
 .widget-clock .square {
   width: 420px;
   height: 100px;
-  transform: rotate(-90deg) translateX(270px) translateY(440px);
+  transform: rotate(-90deg) translateX(290px) translateY(440px);
+}
+
+.widget-clock .digital {
+  margin: 10px;
+}
+
+.link, link:hover, link:active, link:visited {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  color: #fff;
+  margin: 10px;
+}
+
+.fade-in {
+  animation: fade-in 1s linear forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
