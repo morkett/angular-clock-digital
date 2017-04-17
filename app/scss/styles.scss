@@ -10,8 +10,6 @@ section {
   height: 100vh;
   width: 100vw;
   font-family: 'Orbitron', sans-serif;
-  background: url('../images/clockface.png') center center no-repeat;
-  background-size: cover;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -20,6 +18,8 @@ section {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  background: url('../images/clockface.png') center center no-repeat;
+  background-size: cover;
 
   p {
     margin: 10px 0;
@@ -51,8 +51,22 @@ section {
 
   }
 
-
   // p:first-of-type {
   //   margin-top: -3%;
   // }
+}
+
+.analogue {
+  height: 100vh;
+  width: 100vw;
+  background: url('../images/analogue-min.png') center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+
+}
+.widget-clock .square {
+  width: 420px;
+  height: 100px;
+  transform: rotate(-90deg) translateX(270px) translateY(440px);
 }

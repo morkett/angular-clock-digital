@@ -1,0 +1,20 @@
+{
+  "name": "angular-clock",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "David Corkett <dcorkett@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/morkett/angular-clock-digital",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-clock": "^0.5.1"
+  }
+}
