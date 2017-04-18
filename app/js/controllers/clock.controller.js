@@ -12,7 +12,7 @@ function ClockController($timeout){
 
 
   function init() {
-    $timeout(tick, controller.tickInterval);
+    tick();
 
   }
 

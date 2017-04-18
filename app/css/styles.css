@@ -1,0 +1,142 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow: hidden; }
+
+section {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Orbitron', sans-serif;
+  color: white; }
+
+.clockFace {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/clockface.png") center center no-repeat;
+  background-size: cover; }
+  .clockFace p {
+    margin: 10px 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 0.5em rgba(255, 255, 255, 0.5);
+    -ms-transform: skew(-5deg) rotate(-8deg) translateX(-20px) translateY(42px);
+        transform: skew(-5deg) rotate(-8deg) translateX(-20px) translateY(42px); }
+    @media only screen and (max-height: 500px) {
+      .clockFace p {
+        font-size: 1.5em; } }
+    @media only screen and (max-height: 370px) and (max-width: 760px) {
+      .clockFace p {
+        font-size: 1em; } }
+    @media only screen and (max-height: 370px) and (max-width: 650px) {
+      .clockFace p {
+        font-size: .8em; } }
+    @media only screen and (max-height: 370px) and (max-width: 590px) {
+      .clockFace p {
+        font-size: .7em; } }
+  .clockFace .face-right {
+    transform: skewY(0deg) rotateX(-42deg) scaleX(0.25) rotateY(-387deg) translateX(1372px) translateY(-489px) !important; }
+
+.analogue {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  overflow: hidden; }
+  .analogue img {
+    width: 1440px;
+    height: 798px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.widget-clock .square {
+  width: 420px;
+  height: 420px;
+  -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+  top: 200px;
+  left: 440px;
+  padding: 0; }
+
+.widget-clock .digital {
+  margin: 10px; }
+
+.link, link:hover, link:active, link:visited {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  color: #fff;
+  margin: 10px; }
+
+.fade-in {
+  animation: fade-in 1s linear forwards; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
